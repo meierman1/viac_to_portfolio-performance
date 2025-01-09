@@ -1,0 +1,1918 @@
+{
+  "securities": [
+    {
+      "isin": "CH0033846350",
+      "valor": 3384635,
+      "name": "UBS Bond CH AAA-AA",
+      "currencyCode": "CHF",
+      "assetClass": "BONDS",
+      "productCosts": 0.000029,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "de": "Anleihen Schweiz Top Schuldner",
+        "en": "Bond Switzerland",
+        "it": "Obbligazioni Svizzera",
+        "fr": "Obligations Suisse"
+      },
+      "mainSubAssetClass": {
+        "type": "GOVERNMENT_BONDS",
+        "riskLevelRelevant": false
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0033846350",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0033846350",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0033846350",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0033846350"
+      },
+      "sortingPriority": 2
+    },
+    {
+      "isin": "CH0281860111",
+      "valor": 28186011,
+      "name": "UBS Bond CH Corporate",
+      "currencyCode": "CHF",
+      "assetClass": "BONDS",
+      "productCosts": 0.000047,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "de": "Unternehmensanleihen Schweiz",
+        "en": "Bond Switzerland Corporate",
+        "it": "Obbligazioni societarie Svizzera",
+        "fr": "Obligations privées Suisse"
+      },
+      "mainSubAssetClass": {
+        "type": "CORPORATE_BONDS",
+        "riskLevelRelevant": false
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0281860111",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0281860111",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0281860111",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0281860111"
+      },
+      "sortingPriority": 3
+    },
+    {
+      "isin": "CH0033210086",
+      "valor": 3321008,
+      "name": "UBS Bond World ex CH Gov.",
+      "currencyCode": "CHF",
+      "assetClass": "BONDS",
+      "productCosts": 0.00009,
+      "maxWeight": 0.6,
+      "descriptionByLanguage": {
+        "de": "Staatsanleihen Welt ex CH",
+        "en": "Bond World ex CH Government",
+        "it": "Obbligazioni statali Mondo ex CH",
+        "fr": "Obligations publiques Monde ex CH"
+      },
+      "mainSubAssetClass": {
+        "type": "GOVERNMENT_BONDS",
+        "riskLevelRelevant": false
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0033210086",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0033210086",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0033210086",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0033210086"
+      },
+      "sortingPriority": 4
+    },
+    {
+      "isin": "CH0189955260",
+      "valor": 18995526,
+      "name": "UBS Bond World ex CH Corp.",
+      "currencyCode": "CHF",
+      "assetClass": "BONDS",
+      "productCosts": 0.000026,
+      "maxWeight": 0.6,
+      "descriptionByLanguage": {
+        "de": "Unternehmensanleihen Welt ex CH",
+        "en": "Bond World ex CH Corporate",
+        "it": "Obbligazioni societarie Mondo ex CH",
+        "fr": "Obligations privées Monde ex CH"
+      },
+      "mainSubAssetClass": {
+        "type": "CORPORATE_BONDS",
+        "riskLevelRelevant": false
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0189955260",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0189955260",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0189955260",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0189955260"
+      },
+      "sortingPriority": 5
+    },
+    {
+      "isin": "CH0259132105",
+      "valor": 25913210,
+      "name": "UBS Bond Emerging Markets",
+      "currencyCode": "USD",
+      "assetClass": "BONDS",
+      "productCosts": 0.000853,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Hochzinsanleihen Schwellenländer",
+        "en": "Bond Emerging Markets",
+        "it": "Obbligazioni ad alto rendimento Paesi emergenti",
+        "fr": "Obligations à haut rendement Pays émergents"
+      },
+      "mainSubAssetClass": {
+        "type": "HIGH_YIELD_BONDS",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0259132105",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0259132105",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0259132105",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0259132105"
+      },
+      "sortingPriority": 6
+    },
+    {
+      "isin": "CH0033782431",
+      "valor": 3378243,
+      "name": "UBS SMI",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000027,
+      "maxWeight": 0.2,
+      "descriptionByLanguage": {
+        "de": "Aktien Schweiz Large Caps",
+        "en": "Equity Switzerland Large Caps",
+        "it": "Azioni Svizzera Large Caps",
+        "fr": "Actions Suisse Large Caps"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_SWITZERLAND",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0033782431",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0033782431",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0033782431",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0033782431"
+      },
+      "sortingPriority": 16
+    },
+    {
+      "isin": "CH0110869143",
+      "valor": 11086914,
+      "name": "UBS SPI Extra",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000031,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Schweiz Small/Mid Caps",
+        "en": "Equity Switzerland Small/Mid Caps",
+        "it": "Azioni Svizzera Small/Mid Caps",
+        "fr": "Actions Suisse Small/Mid Caps"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_SWITZERLAND",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0110869143",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0110869143",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0110869143",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0110869143"
+      },
+      "sortingPriority": 17
+    },
+    {
+      "isin": "CH0032912732",
+      "valor": 3291273,
+      "name": "UBS ETF SLI",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.002,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Schweiz Large Caps",
+        "en": "Equity Switzerland Large Caps",
+        "it": "Azioni Svizzera Large Caps",
+        "fr": "Actions Suisse Large Caps"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_SWITZERLAND",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://www.ubs.com/2/e/files/RET/FS_RET_CH0032912732_CH_DE.pdf",
+        "en": "https://www.ubs.com/2/e/files/RET/FS_RET_CH0032912732_CH_EN.pdf",
+        "it": "https://www.ubs.com/2/e/files/RET/FS_RET_CH0032912732_CH_IT.pdf",
+        "fr": "https://www.ubs.com/2/e/files/RET/FS_RET_CH0032912732_CH_FR.pdf"
+      },
+      "sortingPriority": 18
+    },
+    {
+      "isin": "IE00B5BMR087",
+      "valor": 10737041,
+      "name": "iShares Core S&P500",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.0007,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien USA",
+        "en": "Equity USA",
+        "it": "Azioni USA",
+        "fr": "Actions USA"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ishares.com/ch/professionelle-anleger/de/literature/fact-sheet/cspx-ishares-core-s-p-500-ucits-etf-fund-fact-sheet-de-ch.pdf",
+        "en": "https://www.ishares.com/ch/professionelle-anleger/de/literature/fact-sheet/cspx-ishares-core-s-p-500-ucits-etf-fund-fact-sheet-en-ch.pdf",
+        "it": "https://www.ishares.com/ch/professionelle-anleger/de/literature/fact-sheet/cspx-ishares-core-s-p-500-ucits-etf-fund-fact-sheet-it-ch.pdf",
+        "fr": "https://www.ishares.com/ch/professionelle-anleger/de/literature/fact-sheet/cspx-ishares-core-s-p-500-ucits-etf-fund-fact-sheet-fr-ch.pdf"
+      },
+      "sortingPriority": 28
+    },
+    {
+      "isin": "LU0629460089",
+      "valor": 13042337,
+      "name": "UBS ETF MSCI USA SRI",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.0022,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien USA [Nachhaltig]",
+        "en": "Equity USA [Sustainable]",
+        "it": "Azioni USA [Sostenibile]",
+        "fr": "Actions USA [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ubs.com/2/e/files/RET/FS_RET_LU0629460089_CH_DE.pdf",
+        "en": "https://www.ubs.com/2/e/files/RET/FS_RET_LU0629460089_CH_EN.pdf",
+        "it": "https://www.ubs.com/2/e/files/RET/FS_RET_LU0629460089_CH_IT.pdf",
+        "fr": "https://www.ubs.com/2/e/files/RET/FS_RET_LU0629460089_CH_FR.pdf"
+      },
+      "sortingPriority": 54
+    },
+    {
+      "isin": "CH0030849613",
+      "valor": 3084961,
+      "name": "UBS Canada",
+      "currencyCode": "CAD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000162,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Kanada",
+        "en": "Equity Canada",
+        "it": "Azioni Canada",
+        "fr": "Actions Canada"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0030849613",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0030849613",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0030849613",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0030849613"
+      },
+      "sortingPriority": 30
+    },
+    {
+      "isin": "LU1048313891",
+      "valor": 24018687,
+      "name": "UBS ETF MSCI Emerging Markets SRI",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.0024,
+      "maxWeight": 0.2,
+      "descriptionByLanguage": {
+        "de": "Aktien Entwicklungsländer [Nachhaltig]",
+        "en": "Equity Emerging Markets [Sustainable]",
+        "it": "Azioni Paesi emergenti [Sostenibile]",
+        "fr": "Actions Pays émergents [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_EMERGING_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ubs.com/2/e/files/RET/FS_RET_LU1048313891_CH_DE.pdf",
+        "en": "https://www.ubs.com/2/e/files/RET/FS_RET_LU1048313891_CH_EN.pdf",
+        "it": "https://www.ubs.com/2/e/files/RET/FS_RET_LU1048313891_CH_IT.pdf",
+        "fr": "https://www.ubs.com/2/e/files/RET/FS_RET_LU1048313891_CH_FR.pdf"
+      },
+      "sortingPriority": 74
+    },
+    {
+      "isin": "LU0629460675",
+      "valor": 13042390,
+      "name": "UBS ETF MSCI EMU SRI",
+      "currencyCode": "EUR",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.002,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Eurozone [Nachhaltig]",
+        "en": "Equity Eurozone [Sustainable]",
+        "it": "Azioni Zona euro [Sostenibile]",
+        "fr": "Actions Zone Euro [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ubs.com/2/e/files/RET/FS_RET_LU0629460675_CH_DE.pdf",
+        "en": "https://www.ubs.com/2/e/files/RET/FS_RET_LU0629460675_CH_EN.pdf",
+        "it": "https://www.ubs.com/2/e/files/RET/FS_RET_LU0629460675_CH_IT.pdf",
+        "fr": "https://www.ubs.com/2/e/files/RET/FS_RET_LU0629460675_CH_FR.pdf"
+      },
+      "sortingPriority": 51
+    },
+    {
+      "isin": "IE00BMP3HN93",
+      "valor": 24501376,
+      "name": "UBS ETF MSCI UK IMI SRI",
+      "currencyCode": "GBP",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.0023,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien UK [Nachhaltig]",
+        "en": "Equity UK [Sustainable]",
+        "it": "Azioni UK [Sostenibile]",
+        "fr": "Actions UK [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ubs.com/2/e/files/RET/FS_RET_IE00BMP3HN93_CH_DE.pdf",
+        "en": "https://www.ubs.com/2/e/files/RET/FS_RET_IE00BMP3HN93_CH_EN.pdf",
+        "it": "https://www.ubs.com/2/e/files/RET/FS_RET_IE00BMP3HN93_CH_IT.pdf",
+        "fr": "https://www.ubs.com/2/e/files/RET/FS_RET_IE00BMP3HN93_CH_FR.pdf"
+      },
+      "sortingPriority": 52
+    },
+    {
+      "isin": "LU0629460832",
+      "valor": 13042405,
+      "name": "UBS ETF MSCI Pacific SRI",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.0028,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Pazifik [Nachhaltig]",
+        "en": "Equity Pacific [Sustainable]",
+        "it": "Azioni Pacifico [Sostenibile]",
+        "fr": "Actions Pacifique [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ubs.com/2/e/files/RET/FS_RET_LU0629460832_CH_DE.pdf",
+        "en": "https://www.ubs.com/2/e/files/RET/FS_RET_LU0629460832_CH_EN.pdf",
+        "it": "https://www.ubs.com/2/e/files/RET/FS_RET_LU0629460832_CH_IT.pdf",
+        "fr": "https://www.ubs.com/2/e/files/RET/FS_RET_LU0629460832_CH_FR.pdf"
+      },
+      "sortingPriority": 55
+    },
+    {
+      "isin": "CH0036599816",
+      "valor": 3659981,
+      "name": "UBS Real Estate CH",
+      "currencyCode": "CHF",
+      "assetClass": "REAL_ESTATE",
+      "productCosts": 0,
+      "maxWeight": 0.3,
+      "descriptionByLanguage": {
+        "de": "Immobilien Schweiz",
+        "en": "Real Estate Switzerland",
+        "it": "Immobili Svizzera",
+        "fr": "Immobilier Suisse"
+      },
+      "mainSubAssetClass": {
+        "type": "REAL_ESTATE_SWITZERLAND",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0036599816",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0036599816",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0036599816",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0036599816"
+      },
+      "sortingPriority": 81
+    },
+    {
+      "isin": "IE00B1FZSF77",
+      "valor": 2778490,
+      "name": "iShares US Property Yield",
+      "currencyCode": "USD",
+      "assetClass": "REAL_ESTATE",
+      "productCosts": 0.004,
+      "maxWeight": 0.15,
+      "descriptionByLanguage": {
+        "de": "Immobilien USA",
+        "en": "Real Estate USA",
+        "it": "Immobili USA",
+        "fr": "Immobilier USA"
+      },
+      "mainSubAssetClass": {
+        "type": "REAL_ESTATE_WORLD",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://www.ishares.com/de/professionelle-anleger/de/literature/fact-sheet/iusp-ishares-us-property-yield-ucits-etf-fund-fact-sheet-de-ch.pdf",
+        "en": "https://www.ishares.com/de/professionelle-anleger/de/literature/fact-sheet/iusp-ishares-us-property-yield-ucits-etf-fund-fact-sheet-en-ch.pdf",
+        "it": "https://www.ishares.com/de/professionelle-anleger/de/literature/fact-sheet/iusp-ishares-us-property-yield-ucits-etf-fund-fact-sheet-it-ch.pdf",
+        "fr": "https://www.ishares.com/de/professionelle-anleger/de/literature/fact-sheet/iusp-ishares-us-property-yield-ucits-etf-fund-fact-sheet-fr-ch.pdf"
+      },
+      "sortingPriority": 83
+    },
+    {
+      "isin": "CH0209106761",
+      "valor": 20910676,
+      "name": "CSIF Gold",
+      "currencyCode": "USD",
+      "assetClass": "COMMODITIES",
+      "productCosts": 0.00086,
+      "maxWeight": 0.1,
+      "descriptionByLanguage": {
+        "de": "Gold",
+        "en": "Gold",
+        "it": "Oro",
+        "fr": "Or"
+      },
+      "mainSubAssetClass": {
+        "type": "COMMODITIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0209106761",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0209106761",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0209106761",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0209106761"
+      },
+      "sortingPriority": 91
+    },
+    {
+      "isin": "IE00B1TXHL60",
+      "valor": 3007862,
+      "name": "iShares Listed Private Equity",
+      "currencyCode": "USD",
+      "assetClass": "ALTERNATIVE_INVESTMENTS",
+      "productCosts": 0.0075,
+      "maxWeight": 0.1,
+      "descriptionByLanguage": {
+        "en": "Private Equity",
+        "it": "Private equity",
+        "fr": "Private equity",
+        "de": "Private Equity"
+      },
+      "mainSubAssetClass": {
+        "type": "ALTERNATIVE_INVESTMENTS",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://www.ishares.com/de/professionelle-anleger/de/literature/fact-sheet/iprv-ishares-listed-private-equity-ucits-etf-fund-fact-sheet-de-ch.pdf",
+        "en": "https://www.ishares.com/de/professionelle-anleger/de/literature/fact-sheet/iprv-ishares-listed-private-equity-ucits-etf-fund-fact-sheet-en-ch.pdf",
+        "it": "https://www.ishares.com/de/professionelle-anleger/de/literature/fact-sheet/iprv-ishares-listed-private-equity-ucits-etf-fund-fact-sheet-it-ch.pdf",
+        "fr": "https://www.ishares.com/de/professionelle-anleger/de/literature/fact-sheet/iprv-ishares-listed-private-equity-ucits-etf-fund-fact-sheet-fr-ch.pdf"
+      },
+      "sortingPriority": 92
+    },
+    {
+      "isin": "LU0340004091",
+      "valor": 3679056,
+      "name": "UBS Global High Yield Bond Fund",
+      "currencyCode": "USD",
+      "assetClass": "BONDS",
+      "productCosts": 0.0012,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Hochzinsanleihen Welt",
+        "en": "High-yield Bonds World",
+        "it": "Obbligazioni ad alto rendimento Mondo",
+        "fr": "Obligations à haut rendement Monde"
+      },
+      "mainSubAssetClass": {
+        "type": "HIGH_YIELD_BONDS",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/LU0340004091",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/LU0340004091",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/LU0340004091",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/LU0340004091"
+      },
+      "sortingPriority": 7
+    },
+    {
+      "isin": "CH0368190739",
+      "valor": 36819073,
+      "name": "UBS ETF MSCI Switzerland IMI SRI",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.0028,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Schweiz [Nachhaltig]",
+        "en": "Equity Switzerland [Sustainable]",
+        "it": "Azioni Svizzera [Sostenibile]",
+        "fr": "Actions Suisse [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_SWITZERLAND",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ubs.com/2/e/files/RET/FS_RET_CH0368190739_CH_DE.pdf",
+        "en": "https://www.ubs.com/2/e/files/RET/FS_RET_CH0368190739_CH_EN.pdf",
+        "it": "https://www.ubs.com/2/e/files/RET/FS_RET_CH0368190739_CH_IT.pdf",
+        "fr": "https://www.ubs.com/2/e/files/RET/FS_RET_CH0368190739_CH_FR.pdf"
+      },
+      "sortingPriority": 20
+    },
+    {
+      "isin": "LU0439730705",
+      "valor": 10348398,
+      "name": "UBS Global Quality Dividend",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.0012,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "en": "Equity World Dividends",
+        "it": "Azioni Mondo Dividendi",
+        "fr": "Actions Monde Dividendes",
+        "de": "Aktien Welt Dividenden"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/LU0439730705",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/LU0439730705",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/LU0439730705",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/LU0439730705"
+      },
+      "sortingPriority": 33
+    },
+    {
+      "isin": "IE00B53SZB19",
+      "valor": 10737617,
+      "name": "iShares Nasdaq 100",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.0033,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien USA Tech",
+        "en": "Equity USA Tech",
+        "it": "Azioni USA Tech",
+        "fr": "Actions USA Tech"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ishares.com/ch/professionelle-anleger/de/literature/fact-sheet/csndx-ishares-nasdaq-100-ucits-etf-fund-fact-sheet-de-ch.pdf",
+        "en": "https://www.ishares.com/ch/professionelle-anleger/de/literature/fact-sheet/csndx-ishares-nasdaq-100-ucits-etf-fund-fact-sheet-en-ch.pdf",
+        "it": "https://www.ishares.com/ch/professionelle-anleger/de/literature/fact-sheet/csndx-ishares-nasdaq-100-ucits-etf-fund-fact-sheet-it-ch.pdf",
+        "fr": "https://www.ishares.com/ch/professionelle-anleger/de/literature/fact-sheet/csndx-ishares-nasdaq-100-ucits-etf-fund-fact-sheet-fr-ch.pdf"
+      },
+      "sortingPriority": 29
+    },
+    {
+      "isin": "CH0397628709",
+      "valor": 39762870,
+      "name": "CSIF US ESG - Pension Fund",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000074,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien USA [Nachhaltig]",
+        "en": "Equity USA [Sustainable]",
+        "it": "Azioni USA [Sostenibile]",
+        "fr": "Actions USA [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0397628709",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0397628709",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0397628709",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0397628709"
+      },
+      "sortingPriority": 53
+    },
+    {
+      "isin": "CH0030849712",
+      "valor": 3084971,
+      "name": "CSIF US - Pension Fund",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000047,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien USA",
+        "en": "Equity USA",
+        "it": "Azioni USA",
+        "fr": "Actions USA"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0030849712",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0030849712",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0030849712",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0030849712"
+      },
+      "sortingPriority": 27
+    },
+    {
+      "isin": "CH0214967314",
+      "valor": 21496731,
+      "name": "CSIF World ex CH Small Cap - Pension Fund",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000599,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Welt ex CH Small Cap",
+        "en": "Equity World ex CH Small Cap",
+        "it": "Azioni Mondo ex CH Small Cap",
+        "fr": "Actions Monde ex CH Small Cap"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0214967314",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0214967314",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0214967314",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0214967314"
+      },
+      "sortingPriority": 36
+    },
+    {
+      "isin": "CH0214968353",
+      "valor": 21496835,
+      "name": "CSIF World ex CH Small Cap hedged - Pension Fund",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000603,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Welt ex CH Small Cap (abgesichert in CHF)",
+        "en": "Equity World ex CH Small Cap (hedged in CHF)",
+        "it": "Azioni Mondo ex CH Small Cap (hedged in CHF)",
+        "fr": "Actions Monde ex CH Small Cap (couvert en CHF)"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0214968353",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0214968353",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0214968353",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0214968353"
+      },
+      "sortingPriority": 37
+    },
+    {
+      "isin": "CH0429081638",
+      "valor": 42908163,
+      "name": "CSIF World ex CH hedged - Pension Fund Plus",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000043,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "de": "Aktien Welt ex CH (abgesichert in CHF)",
+        "en": "Equity World ex CH (hedged in CHF)",
+        "it": "Azioni Mondo ex CH (hedged in CHF)",
+        "fr": "Actions Monde ex CH (couvert en CHF)"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0429081638",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0429081638",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0429081638",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0429081638"
+      },
+      "sortingPriority": 35
+    },
+    {
+      "isin": "CH0429081620",
+      "valor": 42908162,
+      "name": "CSIF World ex CH - Pension Fund Plus",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000038,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "de": "Aktien Welt ex CH",
+        "en": "Equity World ex CH",
+        "it": "Azioni Mondo ex CH",
+        "fr": "Actions Monde ex CH"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0429081620",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0429081620",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0429081620",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0429081620"
+      },
+      "sortingPriority": 34
+    },
+    {
+      "isin": "CH0357515474",
+      "valor": 35751547,
+      "name": "UBS Japan - Pension Fund",
+      "currencyCode": "JPY",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000098,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Japan",
+        "en": "Equity Japan",
+        "it": "Azioni Giappone",
+        "fr": "Actions Japon"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0357515474",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0357515474",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0357515474",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0357515474"
+      },
+      "sortingPriority": 32
+    },
+    {
+      "isin": "LU1815001406",
+      "valor": 41549289,
+      "name": "CSIF China Total Market",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.0013,
+      "maxWeight": 0.2,
+      "descriptionByLanguage": {
+        "en": "Equity China",
+        "it": "Azioni Cina",
+        "fr": "Actions Chine",
+        "de": "Aktien China"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_EMERGING_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/LU1815001406",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/LU1815001406",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/LU1815001406",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/LU1815001406"
+      },
+      "sortingPriority": 72
+    },
+    {
+      "isin": "IE00B1XNHC34",
+      "valor": 3246465,
+      "name": "iShares Global Clean Energy",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.0065,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Global Clean Energy [Nachhaltig]",
+        "en": "Equity Global Clean Energy [Sustainable]",
+        "it": "Azioni Global Clean Energy [Sostenibile]",
+        "fr": "Actions Global Clean Energy [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ishares.com/de/privatanleger/de/literature/fact-sheet/inrg-ishares-global-clean-energy-ucits-etf-fund-fact-sheet-de-ch.pdf",
+        "en": "https://www.ishares.com/de/privatanleger/de/literature/fact-sheet/inrg-ishares-global-clean-energy-ucits-etf-fund-fact-sheet-en-ch.pdf",
+        "it": "https://www.ishares.com/de/privatanleger/de/literature/fact-sheet/inrg-ishares-global-clean-energy-ucits-etf-fund-fact-sheet-it-ch.pdf",
+        "fr": "https://www.ishares.com/de/privatanleger/de/literature/fact-sheet/inrg-ishares-global-clean-energy-ucits-etf-fund-fact-sheet-fr-ch.pdf"
+      },
+      "sortingPriority": 58
+    },
+    {
+      "isin": "CH0337393851",
+      "valor": 33739385,
+      "name": "CSIF World ex CH ESG hedged - Pension Fund Plus",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000072,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "de": "Aktien Welt ex CH (abgesichert in CHF) [Nachhaltig]",
+        "en": "Equity World ex CH (hedged in CHF) [Sustainable]",
+        "it": "Azioni Mondo ex CH (hedged in CHF) [Sostenibile]",
+        "fr": "Actions Monde ex CH (couvert en CHF) [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0337393851",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0337393851",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0337393851",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0337393851"
+      },
+      "sortingPriority": 57
+    },
+    {
+      "isin": "CH0597394516",
+      "valor": 59739451,
+      "name": "UBS SPI ESG",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000058,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Schweiz [Nachhaltig]",
+        "en": "Equity Switzerland [Sustainable]",
+        "it": "Azioni Svizzera [Sostenibile]",
+        "fr": "Actions Suisse [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_SWITZERLAND",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0597394516",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0597394516",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0597394516",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0597394516"
+      },
+      "sortingPriority": 19
+    },
+    {
+      "isin": "CH0215804714",
+      "valor": 21580471,
+      "name": "Swisscanto SMI (SPI 20)",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.2,
+      "descriptionByLanguage": {
+        "en": "Equity Switzerland Large Caps",
+        "de": "Aktien Schweiz Large Caps",
+        "it": "Azioni Svizzera Large Caps",
+        "fr": "Actions Suisse Large Caps"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_SWITZERLAND",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0215804714",
+        "en": "https://products.swisscanto.com/products/product/CH0215804714?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0215804714?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0215804714?lang=fr"
+      },
+      "sortingPriority": 21
+    },
+    {
+      "isin": "CH0132501898",
+      "valor": 13250189,
+      "name": "Swisscanto SPI Extra",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Schweiz Small/Mid Caps",
+        "en": "Equity Switzerland Small/Mid Caps",
+        "it": "Azioni Svizzera Small/Mid Caps",
+        "fr": "Actions Suisse Small/Mid Caps"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_SWITZERLAND",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0132501898",
+        "en": "https://products.swisscanto.com/products/product/CH0132501898?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0132501898?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0132501898?lang=fr"
+      },
+      "sortingPriority": 22
+    },
+    {
+      "isin": "CH0451461963",
+      "valor": 45146196,
+      "name": "Swisscanto SPI Responsible",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Schweiz [Nachhaltig]",
+        "en": "Equity Switzerland [Sustainable]",
+        "it": "Azioni Svizzera [Sostenibile]",
+        "fr": "Actions Suisse [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_SWITZERLAND",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0451461963",
+        "en": "https://products.swisscanto.com/products/product/CH0451461963?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0451461963?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0451461963?lang=fr"
+      },
+      "sortingPriority": 23
+    },
+    {
+      "isin": "CH0117044658",
+      "valor": 11704465,
+      "name": "Swisscanto Europe ex CH",
+      "currencyCode": "EUR",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "en": "Equity Europe ex CH",
+        "it": "Azioni Europa ex CH",
+        "fr": "Actions Europe ex CH",
+        "de": "Aktien Europa ex CH"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0117044658",
+        "en": "https://products.swisscanto.com/products/product/CH0117044658?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0117044658?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0117044658?lang=fr"
+      },
+      "sortingPriority": 38
+    },
+    {
+      "isin": "CH0117044864",
+      "valor": 11704486,
+      "name": "Swisscanto Canada",
+      "currencyCode": "CAD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "en": "Equity Canada",
+        "it": "Azioni Canada",
+        "fr": "Actions Canada",
+        "de": "Aktien Kanada"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0117044864",
+        "en": "https://products.swisscanto.com/products/product/CH0117044864?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0117044864?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0117044864?lang=fr"
+      },
+      "sortingPriority": 40
+    },
+    {
+      "isin": "CH0117044732",
+      "valor": 11704473,
+      "name": "Swisscanto US - IPF",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien USA",
+        "en": "Equity USA",
+        "it": "Azioni USA",
+        "fr": "Actions USA"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0117044732",
+        "en": "https://products.swisscanto.com/products/product/CH0117044732?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0117044732?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0117044732?lang=fr"
+      },
+      "sortingPriority": 39
+    },
+    {
+      "isin": "CH0117044948",
+      "valor": 11704494,
+      "name": "Swisscanto World ex CH - IPF",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "de": "Aktien Welt ex CH",
+        "en": "Equity World ex CH",
+        "it": "Azioni Mondo ex CH",
+        "fr": "Actions Monde ex CH"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0117044948",
+        "en": "https://products.swisscanto.com/products/product/CH0117044948?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0117044948?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0117044948?lang=fr"
+      },
+      "sortingPriority": 43
+    },
+    {
+      "isin": "CH0489405321",
+      "valor": 48940532,
+      "name": "Swisscanto Japan - IPF",
+      "currencyCode": "JPY",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Japan",
+        "en": "Equity Japan",
+        "it": "Azioni Giappone",
+        "fr": "Actions Japon"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0489405321",
+        "en": "https://products.swisscanto.com/products/product/CH0489405321?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0489405321?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0489405321?lang=fr"
+      },
+      "sortingPriority": 42
+    },
+    {
+      "isin": "CH0117044831",
+      "valor": 11704483,
+      "name": "Swisscanto Pacific ex Japan",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "en": "Equity Pacific ex Japan",
+        "it": "Azioni Pacifico ex Giappone",
+        "fr": "Actions Pacifique ex Japon",
+        "de": "Aktien Pazifik ex Japan"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0117044831",
+        "en": "https://products.swisscanto.com/products/product/CH0117044831?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0117044831?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0117044831?lang=fr"
+      },
+      "sortingPriority": 41
+    },
+    {
+      "isin": "CH0117044971",
+      "valor": 11704497,
+      "name": "Swisscanto Emerging Markets",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.2,
+      "descriptionByLanguage": {
+        "de": "Aktien Entwicklungsländer",
+        "en": "Equity Emerging Markets",
+        "it": "Azioni Paesi emergenti",
+        "fr": "Actions Pays émergents"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_EMERGING_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0117044971",
+        "en": "https://products.swisscanto.com/products/product/CH0117044971?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0117044971?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0117044971?lang=fr"
+      },
+      "sortingPriority": 75
+    },
+    {
+      "isin": "CH0215804755",
+      "valor": 21580475,
+      "name": "Swisscanto World ex CH Responsible - IPF",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "en": "Equity World ex CH [Sustainable]",
+        "it": "Azioni Mondo ex CH [Sostenibile]",
+        "fr": "Actions Monde ex CH [Durable]",
+        "de": "Aktien Welt ex CH [Nachhaltig]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0215804755",
+        "en": "https://products.swisscanto.com/products/product/CH0215804755?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0215804755?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0215804755?lang=fr"
+      },
+      "sortingPriority": 60
+    },
+    {
+      "isin": "CH0561458693",
+      "valor": 56145869,
+      "name": "Swisscanto Emerging Markets Responsible",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.2,
+      "descriptionByLanguage": {
+        "en": "Equity Emerging Markets [Sustainable]",
+        "it": "Azioni Paesi emergenti [Sostenibile]",
+        "fr": "Actions Pays émergents [Durable]",
+        "de": "Aktien Entwicklungsländer [Nachhaltig]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_EMERGING_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0561458693",
+        "en": "https://products.swisscanto.com/products/product/CH0561458693?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0561458693?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0561458693?lang=fr"
+      },
+      "sortingPriority": 76
+    },
+    {
+      "isin": "CH0117052545",
+      "valor": 11705254,
+      "name": "Swisscanto Real Estate CH",
+      "currencyCode": "CHF",
+      "assetClass": "REAL_ESTATE",
+      "productCosts": 0,
+      "maxWeight": 0.3,
+      "descriptionByLanguage": {
+        "de": "Immobilien Schweiz",
+        "en": "Real Estate Switzerland",
+        "it": "Immobili Svizzera",
+        "fr": "Immobilier Suisse"
+      },
+      "mainSubAssetClass": {
+        "type": "REAL_ESTATE_SWITZERLAND",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0117052545",
+        "en": "https://products.swisscanto.com/products/product/CH0117052545?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0117052545?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0117052545?lang=fr"
+      },
+      "sortingPriority": 85
+    },
+    {
+      "isin": "CH0117052586",
+      "valor": 11705258,
+      "name": "Swisscanto Real Estate Europe ex CH",
+      "currencyCode": "EUR",
+      "assetClass": "REAL_ESTATE",
+      "productCosts": 0.0001,
+      "maxWeight": 0.15,
+      "descriptionByLanguage": {
+        "de": "Immobilien Europa",
+        "en": "Real Estate Europe",
+        "it": "Immobili Europa",
+        "fr": "Immobilier Europe"
+      },
+      "mainSubAssetClass": {
+        "type": "REAL_ESTATE_WORLD",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0117052586",
+        "en": "https://products.swisscanto.com/products/product/CH0117052586?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0117052586?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0117052586?lang=fr"
+      },
+      "sortingPriority": 86
+    },
+    {
+      "isin": "CH0215804730",
+      "valor": 21580473,
+      "name": "Swisscanto Real Estate North America - IPF",
+      "currencyCode": "USD",
+      "assetClass": "REAL_ESTATE",
+      "productCosts": 0,
+      "maxWeight": 0.15,
+      "descriptionByLanguage": {
+        "en": "Real Estate North America",
+        "it": "Immobili Nord America",
+        "fr": "Immobilier Amérique du Nord",
+        "de": "Immobilien Nordamerika"
+      },
+      "mainSubAssetClass": {
+        "type": "REAL_ESTATE_WORLD",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0215804730",
+        "en": "https://products.swisscanto.com/products/product/CH0215804730?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0215804730?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0215804730?lang=fr"
+      },
+      "sortingPriority": 87
+    },
+    {
+      "isin": "CH0117052669",
+      "valor": 11705266,
+      "name": "Swisscanto Real Estate Asia",
+      "currencyCode": "CHF",
+      "assetClass": "REAL_ESTATE",
+      "productCosts": 0,
+      "maxWeight": 0.15,
+      "descriptionByLanguage": {
+        "en": "Real Estate Asia",
+        "it": "Immobili Asia",
+        "fr": "Immobilier Asie",
+        "de": "Immobilien Asien"
+      },
+      "mainSubAssetClass": {
+        "type": "REAL_ESTATE_WORLD",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0117052669",
+        "en": "https://products.swisscanto.com/products/product/CH0117052669?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0117052669?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0117052669?lang=fr"
+      },
+      "sortingPriority": 88
+    },
+    {
+      "isin": "CH0568725631",
+      "valor": 56872563,
+      "name": "Swisscanto Gold",
+      "currencyCode": "USD",
+      "assetClass": "COMMODITIES",
+      "productCosts": 0,
+      "maxWeight": 0.1,
+      "descriptionByLanguage": {
+        "de": "Gold",
+        "en": "Gold",
+        "it": "Oro",
+        "fr": "Or"
+      },
+      "mainSubAssetClass": {
+        "type": "COMMODITIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0568725631",
+        "en": "https://products.swisscanto.com/products/product/CH0568725631?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0568725631?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0568725631?lang=fr"
+      },
+      "sortingPriority": 93
+    },
+    {
+      "isin": "CH1117196035",
+      "valor": 111719603,
+      "name": "Swisscanto Bond CH Corporate Responsible",
+      "currencyCode": "CHF",
+      "assetClass": "BONDS",
+      "productCosts": 0,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "it": "Obbligazioni societarie Svizzera [Sostenibile]",
+        "fr": "Obligations privées Suisse [Durable]",
+        "de": "Unternehmensanleihen Schweiz [Nachhaltig]",
+        "en": "Bond Switzerland Corporate [Sustainable]"
+      },
+      "mainSubAssetClass": {
+        "type": "CORPORATE_BONDS",
+        "riskLevelRelevant": false
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH1117196035",
+        "en": "https://products.swisscanto.com/products/product/CH1117196035?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH1117196035?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH1117196035?lang=fr"
+      },
+      "sortingPriority": 8
+    },
+    {
+      "isin": "CH0296590281",
+      "valor": 29659028,
+      "name": "Swisscanto World ex CH hedged - IPF",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "de": "Aktien Welt ex CH (abgesichert in CHF)",
+        "en": "Equity World ex CH (hedged in CHF)",
+        "it": "Azioni Mondo ex CH (hedged in CHF)",
+        "fr": "Actions Monde ex CH (couvert en CHF)"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0296590281",
+        "en": "https://products.swisscanto.com/products/product/CH0296590281?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0296590281?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0296590281?lang=fr"
+      },
+      "sortingPriority": 44
+    },
+    {
+      "isin": "CH0293345648",
+      "valor": 29334564,
+      "name": "Swisscanto World ex CH Responsible hedged - IPF",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "en": "Equity World ex CH (hedged in CHF) [Sustainable]",
+        "it": "Azioni Mondo ex CH (hedged in CHF) [Sostenibile]",
+        "fr": "Actions Monde ex CH (couvert en CHF) [Durable]",
+        "de": "Aktien Welt ex CH (abgesichert in CHF) [Nachhaltig]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0293345648",
+        "en": "https://products.swisscanto.com/products/product/CH0293345648?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0293345648?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0293345648?lang=fr"
+      },
+      "sortingPriority": 61
+    },
+    {
+      "isin": "CH1223932505",
+      "valor": 122393250,
+      "name": "Swisscanto US Responsible - IPF",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien USA [Nachhaltig]",
+        "en": "Equity USA [Sustainable]",
+        "it": "Azioni USA [Sostenibile]",
+        "fr": "Actions USA [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH1223932505",
+        "en": "https://products.swisscanto.com/products/product/CH1223932505?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH1223932505?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH1223932505?lang=fr"
+      },
+      "sortingPriority": 59
+    },
+    {
+      "isin": "CH1220910934",
+      "valor": 122091093,
+      "name": "Swisscanto World ex CH Small Cap Responsible - IPF",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Welt ex CH Small Cap [Nachhaltig]",
+        "en": "Equity World ex CH Small Cap [Sustainable]",
+        "it": "Azioni Mondo ex CH Small Cap [Sostenibile]",
+        "fr": "Actions Monde ex CH Small Cap [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH1220910934",
+        "en": "https://products.swisscanto.com/products/product/CH1220910934?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH1220910934?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH1220910934?lang=fr"
+      },
+      "sortingPriority": 62
+    },
+    {
+      "isin": "CH1221211753",
+      "valor": 122121175,
+      "name": "Swisscanto World ex CH Small Cap Responsible hedged - IPF",
+      "currencyCode": "CHF",
+      "assetClass": "EQUITIES",
+      "productCosts": 0,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "en": "Equity World ex CH Small Cap (hedged in CHF) [Sustainable]",
+        "it": "Azioni Mondo ex CH Small Cap (hedged in CHF) [Sostenibile]",
+        "fr": "Actions Monde ex CH Small Cap (couvert en CHF) [Durable]",
+        "de": "Aktien Welt ex CH Small Cap (abgesichert in CHF) [Nachhaltig]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH1221211753",
+        "en": "https://products.swisscanto.com/products/product/CH1221211753?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH1221211753?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH1221211753?lang=fr"
+      },
+      "sortingPriority": 63
+    },
+    {
+      "isin": "CH0215803898",
+      "valor": 21580389,
+      "name": "Swisscanto Bond CH AAA-BBB 1-5",
+      "currencyCode": "CHF",
+      "assetClass": "BONDS",
+      "productCosts": 0,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "de": "Anleihen Schweiz",
+        "en": "Bond Switzerland",
+        "it": "Obbligazioni Svizzera",
+        "fr": "Obligations Suisse"
+      },
+      "mainSubAssetClass": {
+        "type": "GOVERNMENT_BONDS",
+        "riskLevelRelevant": false
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0215803898",
+        "en": "https://products.swisscanto.com/products/product/CH0215803898?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0215803898?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0215803898?lang=fr"
+      },
+      "sortingPriority": 9
+    },
+    {
+      "isin": "CH0117045317",
+      "valor": 11704531,
+      "name": "Swisscanto Bond World ex CH Gov. hedged",
+      "currencyCode": "CHF",
+      "assetClass": "BONDS",
+      "productCosts": 0,
+      "maxWeight": 0.6,
+      "descriptionByLanguage": {
+        "de": "Staatsanleihen Welt ex CH (abgesichert in CHF)",
+        "en": "Bond World ex CH Government (hedged in CHF)",
+        "it": "Obbligazioni statali Mondo ex CH (hedged in CHF)",
+        "fr": "Obligations publiques Monde ex CH (couvert en CHF)"
+      },
+      "mainSubAssetClass": {
+        "type": "GOVERNMENT_BONDS",
+        "riskLevelRelevant": false
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0117045317",
+        "en": "https://products.swisscanto.com/products/product/CH0117045317?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0117045317?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0117045317?lang=fr"
+      },
+      "sortingPriority": 10
+    },
+    {
+      "isin": "CH0117048352",
+      "valor": 11704835,
+      "name": "Swisscanto World ex JPY/CHF Inflation Linked Bonds hedged",
+      "currencyCode": "CHF",
+      "assetClass": "BONDS",
+      "productCosts": 0,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Inflationsindexierte Anleihen (abgesichert in CHF)",
+        "en": "Inflation-linked bonds (hedged in CHF)",
+        "it": "Obbligazioni indicizzate all'inflazione (hedged in CHF)",
+        "fr": "Obligations indexées à l'inflation (couvert en CHF)"
+      },
+      "mainSubAssetClass": {
+        "type": "GOVERNMENT_BONDS",
+        "riskLevelRelevant": false
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0117048352",
+        "en": "https://products.swisscanto.com/products/product/CH0117048352?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0117048352?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0117048352?lang=fr"
+      },
+      "sortingPriority": 13
+    },
+    {
+      "isin": "CH1196925890",
+      "valor": 119692589,
+      "name": "Swisscanto Commodity",
+      "currencyCode": "USD",
+      "assetClass": "COMMODITIES",
+      "productCosts": 0,
+      "maxWeight": 0.15,
+      "descriptionByLanguage": {
+        "de": "Rohstoffe",
+        "en": "Commodities",
+        "it": "Materie prime",
+        "fr": "Matières premières"
+      },
+      "mainSubAssetClass": {
+        "type": "COMMODITIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH1196925890",
+        "en": "https://products.swisscanto.com/products/product/CH1196925890?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH1196925890?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH1196925890?lang=fr"
+      },
+      "sortingPriority": 94
+    },
+    {
+      "isin": "CH0398970274",
+      "valor": 39897027,
+      "name": "Swisscanto Bond Emerging Markets hedged",
+      "currencyCode": "CHF",
+      "assetClass": "BONDS",
+      "productCosts": 0,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Hochzinsanleihen Schwellenländer (abgesichert in CHF)",
+        "en": "Bond Emerging Markets (hedged in CHF)",
+        "it": "Obbligazioni ad alto rendimento Paesi emergenti (hedged in CHF)",
+        "fr": "Obligations à haut rendement Pays émergents (couvert en CHF)"
+      },
+      "mainSubAssetClass": {
+        "type": "HIGH_YIELD_BONDS",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH0398970274",
+        "en": "https://products.swisscanto.com/products/product/CH0398970274?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH0398970274?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH0398970274?lang=fr"
+      },
+      "sortingPriority": 12
+    },
+    {
+      "isin": "CH1146980946",
+      "valor": 114698094,
+      "name": "Swisscanto Bond World ex CH Corp. Responsible hedged",
+      "currencyCode": "CHF",
+      "assetClass": "BONDS",
+      "productCosts": 0,
+      "maxWeight": 0.6,
+      "descriptionByLanguage": {
+        "de": "Unternehmensanleihen Welt ex CH (abgesichert in CHF) [Nachhaltig]",
+        "en": "Bond World ex CH Corporate (hedged in CHF) [Sustainable]",
+        "it": "Obbligazioni societarie Mondo ex CH (hedged in CHF) [Sostenibile]",
+        "fr": "Obligations privées Monde ex CH\n(couvert en CHF) [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "CORPORATE_BONDS",
+        "riskLevelRelevant": false
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://products.swisscanto.com/products/product/CH1146980946",
+        "en": "https://products.swisscanto.com/products/product/CH1146980946?lang=en",
+        "it": "https://products.swisscanto.com/products/product/CH1146980946?lang=it",
+        "fr": "https://products.swisscanto.com/products/product/CH1146980946?lang=fr"
+      },
+      "sortingPriority": 11
+    },
+    {
+      "isin": "CH0031419960",
+      "valor": 3141996,
+      "name": "CSIMF Money Market CHF",
+      "currencyCode": "CHF",
+      "assetClass": "BONDS",
+      "productCosts": 0,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "de": "Geldmarkt CHF",
+        "en": "Money market CHF",
+        "it": "Mercato monetario CHF",
+        "fr": "Marché monétaire CHF"
+      },
+      "mainSubAssetClass": {
+        "type": "GOVERNMENT_BONDS",
+        "riskLevelRelevant": false
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://am.credit-suisse.com/ch/de/asset-management/investment-solutions/fund-search/fund-detail.html/CH0031419960",
+        "en": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0031419960",
+        "it": "https://am.credit-suisse.com/ch/en/asset-management/investment-solutions/fund-search/fund-detail.html/CH0031419960",
+        "fr": "https://am.credit-suisse.com/ch/fr/asset-management/investment-solutions/fund-search/fund-detail.html/CH0031419960"
+      },
+      "sortingPriority": 1
+    },
+    {
+      "isin": "US46438F1012",
+      "valor": 128499088,
+      "name": "iShares Bitcoin Trust",
+      "currencyCode": "USD",
+      "assetClass": "ALTERNATIVE_INVESTMENTS",
+      "productCosts": 0.0025,
+      "maxWeight": 0.05,
+      "descriptionByLanguage": {
+        "de": "Bitcoin",
+        "en": "Bitcoin",
+        "it": "Bitcoin",
+        "fr": "Bitcoin"
+      },
+      "mainSubAssetClass": {
+        "type": "ALTERNATIVE_INVESTMENTS",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://www.blackrock.com/us/individual/products/333011/ishares-bitcoin-trust",
+        "en": "https://www.blackrock.com/us/individual/products/333011/ishares-bitcoin-trust",
+        "it": "https://www.blackrock.com/us/individual/products/333011/ishares-bitcoin-trust",
+        "fr": "https://www.blackrock.com/us/individual/products/333011/ishares-bitcoin-trust"
+      },
+      "sortingPriority": 95
+    },
+    {
+      "isin": "CH1390275357",
+      "valor": 139027535,
+      "name": "CSIF World ex CH ESG - Pension Fund Plus",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000066,
+      "maxWeight": 0.99,
+      "descriptionByLanguage": {
+        "de": "Aktien Welt ex CH [Nachhaltig]",
+        "en": "Equity World ex CH [Sustainable]",
+        "it": "Azioni Mondo ex CH [Sostenibile]",
+        "fr": "Actions Monde ex CH [Durable]"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ubs.com/ch/de/assetmanagement/funds/integration/ch1390275357-csif-ch-iii-equity-world-ex-ch-esg-blue-pension-fund-plus-usd-zb-pd001.html",
+        "en": "https://www.ubs.com/ch/en/assetmanagement/funds/integration/ch1390275357-csif-ch-iii-equity-world-ex-ch-esg-blue-pension-fund-plus-usd-zb-pd001.html",
+        "it": "https://www.ubs.com/ch/en/assetmanagement/funds/integration/ch1390275357-csif-ch-iii-equity-world-ex-ch-esg-blue-pension-fund-plus-usd-zb-pd001.html",
+        "fr": "https://www.ubs.com/ch/fr/assetmanagement/funds/integration/ch1390275357-csif-ch-iii-equity-world-ex-ch-esg-blue-pension-fund-plus-usd-zb-pd001.html"
+      },
+      "sortingPriority": 56
+    },
+    {
+      "isin": "CH1390275365",
+      "valor": 139027536,
+      "name": "CSIF Real Estate World ex CH - Pension Fund",
+      "currencyCode": "USD",
+      "assetClass": "REAL_ESTATE",
+      "productCosts": 0.000032,
+      "maxWeight": 0.3,
+      "descriptionByLanguage": {
+        "de": "Immobilien Welt ex CH",
+        "en": "Real Estate World ex CH",
+        "it": "Immobili Mondo ex CH",
+        "fr": "Immobilier Monde ex CH"
+      },
+      "mainSubAssetClass": {
+        "type": "REAL_ESTATE_WORLD",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "UNIVERSAL",
+      "etfLinksByLanguage": {
+        "de": "https://www.ubs.com/ch/de/assetmanagement/funds/integration/ch1390275365-csif-ch-iii-real-estate-world-ex-ch-pension-fund-usd-zb-pd001.html",
+        "en": "https://www.ubs.com/ch/en/assetmanagement/funds/integration/ch1390275365-csif-ch-iii-real-estate-world-ex-ch-pension-fund-usd-zb-pd001.html",
+        "it": "https://www.ubs.com/ch/en/assetmanagement/funds/integration/ch1390275365-csif-ch-iii-real-estate-world-ex-ch-pension-fund-usd-zb-pd001.html",
+        "fr": "https://www.ubs.com/ch/fr/assetmanagement/funds/integration/ch1390275365-csif-ch-iii-real-estate-world-ex-ch-pension-fund-usd-zb-pd001.html"
+      },
+      "sortingPriority": 84
+    },
+    {
+      "isin": "CH1390275134",
+      "valor": 139027513,
+      "name": "UBS Emerging Markets",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.0009,
+      "maxWeight": 0.2,
+      "descriptionByLanguage": {
+        "de": "Aktien Entwicklungsländer",
+        "en": "Equity Emerging Markets",
+        "it": "Azioni Paesi emergenti",
+        "fr": "Actions Pays émergents"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_EMERGING_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ubs.com/ch/de/assetmanagement/funds/integration/ch1390275134-ubs-ch-index-fund-equities-emerging-markets-nsl-usd-i-b-acc-pd001.html",
+        "en": "https://www.ubs.com/ch/en/assetmanagement/funds/integration/ch1390275134-ubs-ch-index-fund-equities-emerging-markets-nsl-usd-i-b-acc-pd001.html",
+        "it": "https://www.ubs.com/ch/en/assetmanagement/funds/integration/ch1390275134-ubs-ch-index-fund-equities-emerging-markets-nsl-usd-i-b-acc-pd001.html",
+        "fr": "https://www.ubs.com/ch/fr/assetmanagement/funds/integration/ch1390275134-ubs-ch-index-fund-equities-emerging-markets-nsl-usd-i-b-acc-pd001.html"
+      },
+      "sortingPriority": 71
+    },
+    {
+      "isin": "CH1390275209",
+      "valor": 139027520,
+      "name": "UBS Pacific ex Japan",
+      "currencyCode": "USD",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000055,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Pazifik ex Japan",
+        "en": "Equity Pacific ex Japan",
+        "it": "Azioni Pacifico ex Giappone",
+        "fr": "Actions Pacifique ex Japon"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ubs.com/ch/de/assetmanagement/funds/integration/ch1390275209-ubs-ch-index-fund-equities-pacific-ex-japan-nsl-usd-i-x-acc-pd001.html",
+        "en": "https://www.ubs.com/ch/en/assetmanagement/funds/integration/ch1390275209-ubs-ch-index-fund-equities-pacific-ex-japan-nsl-usd-i-x-acc-pd001.html",
+        "it": "https://www.ubs.com/ch/en/assetmanagement/funds/integration/ch1390275209-ubs-ch-index-fund-equities-pacific-ex-japan-nsl-usd-i-x-acc-pd001.html",
+        "fr": "https://www.ubs.com/ch/fr/assetmanagement/funds/integration/ch1390275209-ubs-ch-index-fund-equities-pacific-ex-japan-nsl-usd-i-x-acc-pd001.html"
+      },
+      "sortingPriority": 31
+    },
+    {
+      "isin": "CH1390275274",
+      "valor": 139027527,
+      "name": "UBS Europe ex CH",
+      "currencyCode": "EUR",
+      "assetClass": "EQUITIES",
+      "productCosts": 0.000172,
+      "maxWeight": 0.35,
+      "descriptionByLanguage": {
+        "de": "Aktien Europa ex CH",
+        "en": "Equity Europe ex CH",
+        "it": "Azioni Europa ex CH",
+        "fr": "Actions Europe ex CH"
+      },
+      "mainSubAssetClass": {
+        "type": "SHARES_DEVELOPED_COUNTRIES",
+        "riskLevelRelevant": true
+      },
+      "sustainabilityClassification": "NOT_SUSTAINABLE",
+      "etfLinksByLanguage": {
+        "de": "https://www.ubs.com/ch/de/assetmanagement/funds/integration/ch1390275274-ubs-ch-index-fund-2-equities-europe-ex-ch-eur-i-x-acc-pd001.html",
+        "en": "https://www.ubs.com/ch/en/assetmanagement/funds/integration/ch1390275274-ubs-ch-index-fund-2-equities-europe-ex-ch-eur-i-x-acc-pd001.html",
+        "it": "https://www.ubs.com/ch/en/assetmanagement/funds/integration/ch1390275274-ubs-ch-index-fund-2-equities-europe-ex-ch-eur-i-x-acc-pd001.html",
+        "fr": "https://www.ubs.com/ch/fr/assetmanagement/funds/integration/ch1390275274-ubs-ch-index-fund-2-equities-europe-ex-ch-eur-i-x-acc-pd001.html"
+      },
+      "sortingPriority": 26
+    }
+  ],
+  "maxWeightsByAssetClass": {
+    "CASH": 1,
+    "ALTERNATIVE_INVESTMENTS": 0.1,
+    "EQUITIES": 0.99,
+    "COMMODITIES": 0.15,
+    "BONDS": 0.99,
+    "REAL_ESTATE": 0.3
+  },
+  "maxWeightsBySubAssetClassType": {
+    "REAL_ESTATE_SWITZERLAND": 1,
+    "ALTERNATIVE_INVESTMENTS": 1,
+    "HIGH_YIELD_BONDS": 1,
+    "SHARES_EMERGING_COUNTRIES": 0.4,
+    "GOVERNMENT_BONDS": 1,
+    "CORPORATE_BONDS": 1,
+    "SHARES_SWITZERLAND": 1,
+    "REAL_ESTATE_WORLD": 1,
+    "SHARES_DEVELOPED_COUNTRIES": 1,
+    "COMMODITIES": 1
+  },
+  "minCashRatio": 0.01,
+  "maxForeignCurrencyRatio": 0.99,
+  "allInFee": 0.0052,
+  "administrationFeeCap": 0.004
+}
