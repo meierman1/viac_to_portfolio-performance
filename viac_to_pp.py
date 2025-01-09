@@ -6,7 +6,6 @@ from datetime import datetime, timedelta
 import pymupdf  # PyMuPDF
 import xml.etree.ElementTree as ET
 
-
 # filename of generated securities csv
 securities_csv = 'securities.csv'
 
@@ -19,6 +18,13 @@ pdf_folder = 'pdfs'
 # portfolio XML filename
 portfolio_xml = 'portfolio.xml'
 
+if not (os.path.isfile(transactions_fn)):
+    print(
+        "Error: No file {} with your transactions found. Follow instructions online to download it and paste it "
+        "where you execute this script named {}".format(transactions_fn, transactions_fn))
+    exit(1)
+
+
 # Define a function to extract shares and exchange rate from a PDF file
 def extract_shares_and_exchange_rate(document_number):
     global pdf_folder
@@ -29,7 +35,8 @@ def extract_shares_and_exchange_rate(document_number):
     pdf_files = [f for f in os.listdir(pdf_folder) if document_number in f]
 
     if not pdf_files:
-        raise FileNotFoundError(f"No PDF file found containing document number {document_number}")
+        raise FileNotFoundError(
+            f"Error: No PDF file found containing document number {document_number}")
 
     pdf_path = os.path.join(pdf_folder, pdf_files[0])
 
@@ -155,8 +162,7 @@ def process_transactions(account_id, transactions, securities):
             elif transaction['type'] in ['TRADE_SELL', 'TRADE_BUY']:
                 row['Security Name'] = transaction.get('description', '')
                 try:
-                    shares, exchange_rate, isin, currency = extract_shares_and_exchange_rate(
-                        transaction['documentNumber'])
+                    shares, exchange_rate, isin, currency = extract_shares_and_exchange_rate(transaction['documentNumber'])
                     if isin not in securities:
                         securities[isin] = (row['Security Name'], currency)
                     row['Shares'] = shares
@@ -166,9 +172,9 @@ def process_transactions(account_id, transactions, securities):
                     if float(row['Shares']) != 0:
                         last_price[row['Security Name']] = row['Value'] / float(row['Shares'])
                 except FileNotFoundError as e:
-                    print(f"Warning: PDF not found for transaction:")
-                    print(
-                        f"{transaction['type'].split('_')[1]} {transaction['valueDate']} {transaction.get('description', '')} of CHF {transaction['amountInChf']}")
+                    print(f"Warning: PDF not found for transaction (add it to {pdf_folder} folder!):")
+                    print(f"{transaction['type'].split('_')[1]} {transaction['valueDate']} "
+                        f"{transaction.get('description', '')} of CHF {transaction['amountInChf']}")
                 if transaction['type'] == 'TRADE_SELL':
                     row['Type'] = 'Sell'
                     holding[row['Security Name']] -= round(float(row['Shares']), 3)
@@ -213,13 +219,13 @@ def process_transactions(account_id, transactions, securities):
             else:
                 account_writer.writerow(row)
 
+
 # Function to find security by ISIN in the XML tree of the portfolio file
 def find_security_by_isin(root, isin):
     for security in root.findall('.//security'):
         if security.find('isin') is not None and security.find('isin').text == isin:
             return security
     return None
-
 
 
 # Load the JSON data from the file
@@ -243,12 +249,15 @@ with open(securities_csv, mode='w', newline='') as file:
 
 print("finished generating files!")
 
-
-if not(os.path.isfile(portfolio_xml)):
+if not (os.path.isfile(portfolio_xml)):
     print("Warning: No portfolio XML file was found. Here are your options:")
-    print("- Either add the portfolio named {} into the folder where you execute this script and run it again".format(portfolio_xml))
-    print("- Add Securities manually (either based on the {} file, or by continuing and importing the transactions). However, you will likely not get historic data for most funds.".format(portfolio_xml, securities_csv))
-    print("- If you know that the securities are already in your portfolio, just ignore this and continue with importing the transactions")
+    print("- Either add the portfolio named {} into the folder where you execute this script and run it again".format(
+        portfolio_xml))
+    print(
+        "- Add Securities manually (either based on the {} file, or by continuing and importing the transactions). However, you will likely not get historic data for most funds.".format(
+            portfolio_xml, securities_csv))
+    print(
+        "- If you know that the securities are already in your portfolio, just ignore this and continue with importing the transactions")
     exit(1)
 
 print("Loading Securities into portfolio!")
@@ -300,5 +309,5 @@ for isin, data in securities_data.items():
             print(
                 f"\033[1;31mError: {isin} {name_csv} {currency_csv} is not in our database, please add it manually to the securities before adding transactions. You may also send this info to us through github so that we can add it to the list.\033[0m")
 
-print("all done. You can now open the portfolio file and go ahead and create the accounts (if you have not already) and import the transactions!")
-
+print(
+    "all done. You can now open the portfolio file and go ahead and create the accounts (if you have not already) and import the transactions!")
