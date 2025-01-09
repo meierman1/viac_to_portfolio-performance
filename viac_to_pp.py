@@ -20,8 +20,8 @@ portfolio_xml = 'portfolio.xml'
 
 if not (os.path.isfile(transactions_fn)):
     print(
-        "Error: No file {} with your transactions found. Follow instructions online to download it and paste it "
-        "where you execute this script named {}".format(transactions_fn, transactions_fn))
+        "\033[1;31mError: No file {} with your transactions found. Follow instructions online to download it and paste it "
+        "where you execute this script named {}\033[0m".format(transactions_fn, transactions_fn))
     exit(1)
 
 
@@ -36,7 +36,7 @@ def extract_shares_and_exchange_rate(document_number):
 
     if not pdf_files:
         raise FileNotFoundError(
-            f"Error: No PDF file found containing document number {document_number}")
+            f"\033[1;31mError: No PDF file found containing document number {document_number}\033[0m")
 
     pdf_path = os.path.join(pdf_folder, pdf_files[0])
 
@@ -53,7 +53,7 @@ def extract_shares_and_exchange_rate(document_number):
         if shares_match:
             shares = shares_match.group(1)
         if len(shares) < 2:
-            print(f"Error in transaction {document_number}. File exists but could not find number of shares!")
+            print(f"\033[1;31mError in transaction {document_number}. File exists but could not find number of shares!\033[0m")
 
         currency = ""
         # Search for exchange rate value
@@ -172,18 +172,26 @@ def process_transactions(account_id, transactions, securities):
                     if float(row['Shares']) != 0:
                         last_price[row['Security Name']] = row['Value'] / float(row['Shares'])
                 except FileNotFoundError as e:
-                    print(f"Warning: PDF not found for transaction (add it to {pdf_folder} folder!):")
-                    print(f"{transaction['type'].split('_')[1]} {transaction['valueDate']} "
-                        f"{transaction.get('description', '')} of CHF {transaction['amountInChf']}")
+                    print(f"\033[1;33mWarning: PDF not found for transaction (add it to {pdf_folder} folder!):\033[0m")
+                    print(f"\033[1;33m{transaction['valueDate']} {transaction['type'].split('_')[1]} "
+                        f"{transaction.get('description', '')} of CHF {transaction['amountInChf']}\033[0m")
                 if transaction['type'] == 'TRADE_SELL':
+                    if row['Shares'] != '': # normal case, when pdf is found
+                        n_shares = round(float(row['Shares']), 3)
+                    else:
+                        n_shares = 0 # effectively deactivate consistency check
                     row['Type'] = 'Sell'
-                    holding[row['Security Name']] -= round(float(row['Shares']), 3)
+                    holding[row['Security Name']] -= n_shares
                 else:  # transaction['type'] == 'TRADE_BUY':
                     row['Type'] = 'Buy'
-                    if row['Security Name'] not in holding:
-                        holding[row['Security Name']] = round(float(row['Shares']), 3)
+                    if row['Shares'] != '': # normal case, when pdf is found
+                        n_shares = round(float(row['Shares']), 3)
                     else:
-                        holding[row['Security Name']] += round(float(row['Shares']), 3)
+                        n_shares = 999999999 # effectively deactivate consistency check
+                    if row['Security Name'] not in holding:
+                        holding[row['Security Name']] = n_shares
+                    else:
+                        holding[row['Security Name']] += n_shares
 
 
             elif transaction['type'] == 'INTEREST':
@@ -191,7 +199,7 @@ def process_transactions(account_id, transactions, securities):
             elif transaction['type'] == 'FEE_CHARGE':
                 row['Type'] = 'Fees'
             elif transaction['type'] != 'DIVIDEND_CANCELLATION':
-                print("Warning: Unknown Transaction type {}. Transaction ignored".format(transaction['type']))
+                print("\033[1;33mWarning: Unknown Transaction type {}. Transaction ignored\033[0m".format(transaction['type']))
 
             # Write to the appropriate CSV file
             if transaction['type'] in ['TRADE_SELL', 'TRADE_BUY']:
@@ -250,7 +258,7 @@ with open(securities_csv, mode='w', newline='') as file:
 print("finished generating files!")
 
 if not (os.path.isfile(portfolio_xml)):
-    print("Warning: No portfolio XML file was found. Here are your options:")
+    print("\033[1;33mWarning: No portfolio XML file was found. Here are your options:\033[0m")
     print("- Either add the portfolio named {} into the folder where you execute this script and run it again".format(
         portfolio_xml))
     print(
@@ -289,7 +297,7 @@ for isin, data in securities_data.items():
             print(f"{isin} {name_csv} ok")
         else:
             print(
-                f"\033[1;31mWarning: {isin} is already in the portfolio but name is {name_portfolio} but viac calls it {name_csv}. This may require you to select the security manually when importing transactions.\033[0m")
+                f"\033[1;33mWarning: {isin} is already in the portfolio but name is {name_portfolio} but viac calls it {name_csv}. This may require you to select the security manually when importing transactions.\033[0m")
     else:
         # If not found in portfolio, check in pp_all_securities.xml
         all_securities_xml = 'data/pp_all_viac_securities.xml'
