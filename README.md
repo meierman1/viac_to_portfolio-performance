@@ -8,24 +8,26 @@ All you need is internet access, your VIAC login, an installation of Portfolio P
 
 `pip install pymupdf`
 
+Alternatively, you can also use `pip install -r requirements.txt` which does the same thing.
+
 # Data Preparation
 
 The data needed for this process is extracted from two sources: A .json file which contains all transactions, as well as the pdf files for buy and sell transactions.
 
-1. Clone this repository or just download viac_to_pp.py and paste it into an otherwise empty folder
+1. Clone this repository (or download and extract a .zip image)
 2. Create a subfolder `pdfs`
 
-## transactions.json
+## Get your transactions.json file
 
-1. Log in to your VIAC account
+1. Log into your VIAC account
 2. Click on one of your 3A portfolios
-3. Open the developpers console of your webbrowser (Ctrl+Shift+I for Firefox).
-4. Go to the Network tab
-5. Reload the VIAC page without cache (Ctrl + F5 for Firefox)
-6. Use search bar to find the transactions entry
-7. Click on it, click on response, select raw and copy paste the json into a text editor and save as transactions.json in the previously created folder next to the python file
+3. Open the Developer Tools of your webbrowser (Ctrl+Shift+I for Firefox).
+4. Go to the Network tab in the Developer Tools
+5. Reload the VIAC page without using cached data (Ctrl + F5 for Firefox)
+6. Use search bar to find the `transactions` entry
+7. Click on it, click on response, select raw and copy paste the json into a text editor and save it as `transactions.json` in the previously created folder next to the python file
 
-## Buy and Sells
+## Get your Buy and Sells Transaction files
 
 Unfortunately, the amount of shares of each buy and sell operation as well as the exchange rate is only available in the corresponding transaction pdf. Follow these steps to download all necessary file within a few minutes (even if it is multiple hundreds).
 
@@ -33,17 +35,29 @@ Unfortunately, the amount of shares of each buy and sell operation as well as th
 	1. Go to settings
 	2. Search for Applications
 	3. For PDF select "save file"
-2. For each VIAC portfolio go to Transactions and filter to only display Buy and sell
-3. Click on every entry to download the pdf. Don't worry about duplicates, they are no issue. If you miss one, the tool will later tell you. So you can go fast!
-4. Copy all downloaded pdfs into the previously created `pdfs` folder. Do not rename them! If they have indication in the filename of duplicate downloads (e.g., `(1)`) don't worry about them!
+2. Log into your VIAC account
+3. For each VIAC portfolio go to Transactions and filter to only display Buy and sell transactions
+4. Click on every entry to download the pdf. Don't worry about duplicates, they are no issue. If you miss one, the tool will later tell you. _You can go fast!_
+5. Copy all downloaded pdfs into the previously created `pdfs` folder. Again, don't bother to remove duplicates. Do not rename the files! If they have indication in the filename of duplicate downloads (e.g., `(1)`) don't worry about them!
+6. Reset your browser settings to open PDFs again
 
-# Generate csv files
+## Save your Portfolio as XML
+
+Since securities importing as csv does not produce historic data for most VIAC funds, this tool can enter them directly into the raw XML portfolio file. This is optional. If you do not want that or prefer to add them manually, ignore this step.
+
+1. Open your portfolio, click `Save as -> XML`, save into the same folder as the transactions.json
+
+_Make sure to keep the original portfolio in the original location as a backup_
+
+Please note that this may cause double entries in the Securities in case your existing ones have no ISIN entered. Make sure to delete possible duplicates before importing transactions.
+
+# Run the tool
 
 Now run the python file:
 
 `py viac_to_pp.py`
 
-Pay attention to the output! If there are warnings or errors, make sure to fix them (e.g., download missing pdf files) and run the script again.
+Pay attention to the output! If there are warnings or errors, make sure to fix them (e.g., download missing pdf files) and run the script again. Don't worry 
 
 
 # Import all the data
@@ -52,20 +66,19 @@ Pay attention to the output! If there are warnings or errors, make sure to fix t
 
 Create a CHF-Denominated Account and a Portfolio for each VIAC Portfolio. Naming does not matter here.
 
-## Import Securities
+## Import Portfolio and Account transactions
 
-1. In PP: "File -> Import -> CSV" and select the securities.csv file which you previously generated
-2. Change Type of Data to "Securities" and make sure all Columns are correctly recognized (green). Otherwise, manually select the corresponding column type.
-3. On the next screen, check for errors (there should be none) and click finish
-4. The next screen shows which funds were recognized and data available (See Updated Configuration Column). Unfortunately, a lot of the funds are not recognized this way due to the CS - UBS merger. Press OK.
-5. If you want price data for the funds (recommended), you have to manually replace the non-recognized funds:
-	1. 
+Repeat for each one of your VIAC portfolios:
 
-## Import Portfolio transactions
+1. In PP `File->Import->CSV files`, select the PorfolioTransaction file that was generated
+2. In the preview, change Type of data to `Portfolio Transactions` and make sure all columns are recognized (green), hit next
+3. Select the Cash and Securities Accounts and scroll through all transactions (they should all appear with a green checkmark). If you imported the securities before, make sure there are no securities imported at the bottom of the list. If there are, right click and replace them with the right entry (this may be caused by mismatched naming which is used for identifiaction).
+4. Repeat the process for the AccountTransaction file (and select `Account Transactions` accordingly), again make sure no new Securities are imported in case some names are mis-matched.
 
+That's it, you are done. You can now save your portfolio back into a binary or a securely encoded file. Keep this folder around - it makes later updates easier to have the whole transaction history.
 
-## Import Account Transactions
-
+# Updating the Portfolio
+If you want to come back later and update your VIAC portfolio with new transactions, simply download the transactions.json file again and the new buy and sell pdfs. Then rerun the tool. No duplicate securities will be generated (and duplicate transactions are rejected during import).
 
 # Know Issues / Limitations
 
