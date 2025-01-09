@@ -1,6 +1,6 @@
 # VIAC 3A data transfer to Portfolio Performance
 
-This repository provides a manual and python code to transfer your VIAC portfolio history to [Portfolio Performance](https://www.portfolio-performance.info/). Unfortunately, this process still includes manual steps as not all required data is readily available.
+This repository provides a method to transfer your VIAC portfolio history to [Portfolio Performance](https://www.portfolio-performance.info/). Unfortunately, this process still includes manual steps as not all required data is readily available.
 
 # Requirements
 
@@ -11,6 +11,7 @@ All you need is internet access, your VIAC login, an installation of Portfolio P
 Alternatively, you can also use `pip install -r requirements.txt` which does the same thing.
 
 # Data Preparation
+
 
 The data needed for this process is extracted from two sources: A .json file which contains all transactions, as well as the pdf files for buy and sell transactions.
 
@@ -35,7 +36,7 @@ Unfortunately, the amount of shares of each buy and sell operation as well as th
 	1. Go to settings
 	2. Search for Applications
 	3. For PDF select "save file"
-2. Log into your VIAC account
+2. Log into your VIAC account, make sure it is set to German or English (pdfs need to be in that language)
 3. For each VIAC portfolio go to Transactions and filter to only display Buy and sell transactions
 4. Click on every entry to download the pdf. Don't worry about duplicates, they are no issue. If you miss one, the tool will later tell you. _You can go fast!_
 5. Copy all downloaded pdfs into the previously created `pdfs` folder. Again, don't bother to remove duplicates. Do not rename the files! If they have indication in the filename of duplicate downloads (e.g., `(1)`) don't worry about them!
