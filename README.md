@@ -81,7 +81,10 @@ That's it, you are done. You can now save your portfolio back into a binary or a
 # Updating the Portfolio
 If you want to come back later and update your VIAC portfolio with new transactions, simply download the transactions.json file again and the new buy and sell pdfs. Then rerun the tool. No duplicate securities will be generated (and duplicate transactions are rejected during import).
 
-# Know Issues / Limitations
+# Known Issues / Limitations
+
+## Old funds
+The automatic import of older funds may not work because it is not in our dummy portfolio (see data folder). The script will print a warning. Feel free to open an issue with the corresponding ISIN, fund name (as used by VIAC) and fund currency. I will then add them.
 
 ## Dividends in foreign Currencies
 PP currently has a bug that does not allow the import of Dividends in foreign currencies. As a workaround, these dividends are treated as interest on the cash with a note explaining. You can later go and manually replace them if you want (adding these dividends works through the GUI).
