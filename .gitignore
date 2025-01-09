@@ -4,3 +4,6 @@
 .ipynb_checkpoints
 .idea
 *backup-after-open.xml
+*backup.xml
+portfolio.xml
+envviacpp/*
