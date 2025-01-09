@@ -243,7 +243,15 @@ with open(securities_csv, mode='w', newline='') as file:
 
 print("finished generating files!")
 
-print("Loading Securities in portfolio!")
+
+if not(os.path.isfile(portfolio_xml)):
+    print("Warning: No portfolio XML file was found. Here are your options:")
+    print("- Either add the portfolio named {} into the folder where you execute this script and run it again".format(portfolio_xml))
+    print("- Add Securities manually (either based on the {} file, or by continuing and importing the transactions). However, you will likely not get historic data for most funds.".format(portfolio_xml, securities_csv))
+    print("- If you know that the securities are already in your portfolio, just ignore this and continue with importing the transactions")
+    exit(1)
+
+print("Loading Securities into portfolio!")
 # modify securities
 
 securities_data = {}
