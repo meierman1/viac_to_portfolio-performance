@@ -5,5 +5,9 @@
 .idea
 *backup-after-open.xml
 *backup.xml
+*.viac-backup
 portfolio.xml
 envviacpp/*
+out/
+*.zip
+__pycache__/
