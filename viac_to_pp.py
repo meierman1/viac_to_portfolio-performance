@@ -259,7 +259,12 @@ class Converter:
 
     @staticmethod
     def _is_cancelled(transaction, cancellations):
-        """A dividend that was reversed within 30 days by an equal cancellation."""
+        """A dividend that a cancellation reversed within 30 days.
+
+        VIAC books the cancellation with the opposite sign of the dividend.
+        One cancellation reverses exactly one dividend. This function removes
+        the cancellation that it matches, so it never matches a second time.
+        """
         try:
             when = datetime.strptime(transaction['valueDate'], '%Y-%m-%d')
         except (KeyError, ValueError):
@@ -269,8 +274,12 @@ class Converter:
                 cancelled_on = datetime.strptime(cancellation['valueDate'], '%Y-%m-%d')
             except (KeyError, ValueError):
                 continue
-            if (cancellation.get('amountInChf') == transaction.get('amountInChf')
+            if cancellation.get('description') != transaction.get('description'):
+                continue
+            reversed_amount = -cancellation.get('amountInChf', 0)
+            if (abs(reversed_amount - transaction.get('amountInChf', 0)) < 1e-6
                     and abs((when - cancelled_on).days) <= 30):
+                cancellations.remove(cancellation)
                 return True
         return False
 
