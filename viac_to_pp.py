@@ -29,7 +29,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ALL_SECURITIES_XML = os.path.join(HERE, 'data', 'pp_all_viac_securities.xml')
 
 CSV_FIELDNAMES = ['Date', 'Type', 'Value', 'Security Name', 'Transaction Currency',
-                  'Shares', 'Exchange Rate', 'Note']
+                  'Shares', 'Exchange Rate', 'Gross Amount', 'Currency Gross Amount', 'Note']
+
+# Key of the buffered-only value that write_csvs turns into the two forex columns.
+PENDING_FOREX = '_forex'
 
 # Words that introduce the number of shares / the exchange rate in a VIAC PDF.
 RE_SHARES = re.compile(r'(?:Kauf|Buy|Verkauf|Sell|Achat|Vente|Acquisto|Vendita)\n(\d+\.\d+)')
@@ -208,6 +211,8 @@ class Converter:
                 'Transaction Currency': 'CHF',
                 'Shares': '',
                 'Exchange Rate': '',
+                'Gross Amount': '',
+                'Currency Gross Amount': '',
                 'Note': '',
             }
 
@@ -236,9 +241,15 @@ class Converter:
 
         self.accounts.append((account_id, portfolio_rows, account_rows))
 
-    def write_csvs(self, rename=None):
-        """Write the buffered rows, optionally under different security names."""
+    def write_csvs(self, rename=None, security_currency=None):
+        """Write the buffered rows.
+
+        rename maps a VIAC security name onto the name the portfolio already uses.
+        security_currency maps a VIAC security name onto the currency the security
+        has in Portfolio Performance.
+        """
         rename = rename or {}
+        security_currency = security_currency or {}
         self.written = []
         for account_id, portfolio_rows, account_rows in self.accounts:
             portfolio_path = os.path.join(self.out_dir,
@@ -250,12 +261,31 @@ class Converter:
                     writer = csv.DictWriter(fh, fieldnames=CSV_FIELDNAMES)
                     writer.writeheader()
                     for row in rows:
-                        name = row['Security Name']
-                        if name in rename:
-                            row = dict(row, **{'Security Name': rename[name]})
-                        writer.writerow(row)
+                        writer.writerow(self._finish_row(row, rename, security_currency))
             self.written.append((account_id, portfolio_path, len(portfolio_rows),
                                  account_path, len(account_rows)))
+
+    @staticmethod
+    def _finish_row(row, rename, security_currency):
+        """Turn a buffered row into the record that goes into the CSV file."""
+        name = row['Security Name']
+        forex = row.get(PENDING_FOREX)
+        row = {key: value for key, value in row.items() if key != PENDING_FOREX}
+
+        if forex is not None:
+            # VIAC pays the dividend in CHF. PP books it only when the CSV also gives
+            # the amount in the currency of the security, which PP converts back with
+            # a rate it derives itself. A fund that PP quotes in CHF needs no columns.
+            currency, rate = forex
+            in_portfolio = security_currency.get(name, currency)
+            gross = round(float(row['Value']) * rate, 2)
+            if in_portfolio == currency and currency != 'CHF' and gross > 0:
+                row['Gross Amount'] = gross
+                row['Currency Gross Amount'] = currency
+
+        if name in rename:
+            row['Security Name'] = rename[name]
+        return row
 
     @staticmethod
     def _is_cancelled(transaction, cancellations):
@@ -287,14 +317,12 @@ class Converter:
         name = transaction.get('description', '')
         row['Type'] = 'Dividend'
         row['Security Name'] = name
-        if self.last_ex_rate.get(name, ''):
-            # PP cannot import dividends in a foreign currency, so book it as interest
-            # and record what it really was in the note.
-            row['Type'] = 'Interest'
-            row['Note'] = ('Dividend from "{}" original currency: {}, est. exchange rate: {}, '
-                           'CHF amount {}'.format(name, self.last_curr.get(name, ''),
-                                                  self.last_ex_rate.get(name, ''), row['Value']))
-            row['Security Name'] = ''
+        # PP needs the gross amount in the currency of the security. Only write_csvs
+        # knows that currency, so keep the estimate here and let it decide.
+        rate = self.last_ex_rate.get(name, '')
+        currency = self.last_curr.get(name, '')
+        if rate and currency:
+            row[PENDING_FOREX] = (currency, float(rate))
 
     def _trade(self, row, transaction, holding):
         name = transaction.get('description', '')
@@ -385,6 +413,40 @@ def names_by_isin(root):
         if isin and name:
             out.setdefault(isin, name)
     return out
+
+
+def currencies_by_isin(root):
+    out = {}
+    for security in real_securities(root):
+        isin = security.findtext('isin')
+        currency = security.findtext('currencyCode')
+        if isin and currency:
+            out.setdefault(isin, currency)
+    return out
+
+
+def build_currency_map(portfolio_root, securities):
+    """Map each VIAC security name onto the currency it has in Portfolio Performance.
+
+    A fund can trade in USD and still be quoted in CHF, so the currency in the VIAC
+    PDF is only the last resort. The portfolio itself decides first, then this
+    tool's own database, which is what the import adds for a security you do not
+    hold yet.
+    """
+    from_portfolio = currencies_by_isin(portfolio_root) if portfolio_root is not None else {}
+    from_database = {}
+    if os.path.isfile(ALL_SECURITIES_XML):
+        try:
+            from_database = currencies_by_isin(ET.parse(ALL_SECURITIES_XML).getroot())
+        except ET.ParseError:
+            pass
+
+    currency_of = {}
+    for isin, (name, viac_currency) in securities.items():
+        currency_of[name] = (from_portfolio.get(isin)
+                             or from_database.get(isin)
+                             or viac_currency)
+    return currency_of
 
 
 def build_rename_map(existing, securities, out):
@@ -627,7 +689,7 @@ def main(argv=None):
                 names_by_isin(portfolio_root), converter.securities, out)
             rename = ask_about_renames(candidates, skipped, out, args.rename)
 
-    converter.write_csvs(rename)
+    converter.write_csvs(rename, build_currency_map(portfolio_root, converter.securities))
 
     securities_csv = os.path.join(out_dir, 'securities.csv')
     with open(securities_csv, 'w', newline='') as fh:

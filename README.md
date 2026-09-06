@@ -77,14 +77,16 @@ select the two accounts. Repeat with `out/<id>_AccountTransaction.csv` as
 Watch for securities being created at the bottom of the preview list - that means
 a name did not match. Right click and replace them with the right entry.
 
+A fund that Portfolio Performance quotes in a foreign currency gets two more
+columns, `Gross Amount` and `Currency Gross Amount`, which hold the dividend in
+that currency. Portfolio Performance needs them to book the dividend, and it
+derives the exchange rate from them. Leave both columns mapped.
+
 To update later, run both steps again. Duplicate securities are not created, and
 Portfolio Performance rejects duplicate transactions.
 
 ## Limitations
 
-- **Foreign-currency dividends** cannot be imported by Portfolio Performance, so
-  they are booked as interest with a note giving the original currency, rate and
-  amount. You can replace them through the GUI afterwards.
 - **Unhandled transaction types** (Allocation Segment, Payout, Fusion, Transfer,
   Correction, Buy/Sell Cancellation) are skipped with a warning - no test data.
   Send an anonymised `transactions.json` entry and PDF and they can be added.
